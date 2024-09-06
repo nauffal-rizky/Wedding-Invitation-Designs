@@ -1,0 +1,3 @@
+- minimize the size of input in RSVP
+- make a working submit-btn in RSVP
+- make the guest contact input only for phone number
