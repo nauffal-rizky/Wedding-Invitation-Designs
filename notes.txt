@@ -1,3 +1,4 @@
-- minimize the size of input in RSVP
+FIRST DESIGN:
 - make a working submit-btn in RSVP
 - make the guest contact input only for phone number
+- continue making footer
