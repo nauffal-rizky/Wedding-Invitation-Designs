@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
-    <title>Document</title>
+    <title>Wedding Invitation</title>
   </head>
   <body>
     <header>
@@ -12,14 +12,26 @@
       <span>Naufal & Dwi</span>
       <p>Akan melangsungkan resepsi pernikahan dalam:</p>
       <div class="countdown">
-        <div class="time-box day"><span>Hari:</span><span>07</span></div>
-        <div class="time-box hour"><span>Jam:</span><span>5</span></div>
-        <div class="time-box minute"><span>Menit:</span><span>23</span></div>
-        <div class="time-box second"><span>Detik:</span><span>47</span></div>
+        <div>
+          <span>Hari:</span>
+          <span class="day-box"></span>
+        </div>
+        <div>
+          <span>Jam:</span>
+          <span class="hour-box"></span>
+        </div>
+        <div>
+          <span>Menit:</span>
+          <span class="minute-box"></span>
+        </div>
+        <div>
+          <span>Detik:</span>
+          <span class="second-box"></span>
+        </div>
       </div>
-      <button class="open-btn">Lihat undangan</button>
+      <a class="open-btn" href="#navbar">Lihat undangan</a>
     </header>
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
       <div class="head-nav">
         <span>ND Wedding</span>
         <i class="fa-solid fa-bars nav-toggle"></i>
@@ -46,7 +58,7 @@
       </ul>
     </nav>
     <main>
-      <section class="home" id="home">
+      <section class="home">
         <article class="wrapper">
           <span class="title">Acara Pernikahan</span>
           <span>Diselenggarakan pada 02 April 2024 di Bogor, Jawa Barat.</span>
@@ -98,7 +110,7 @@
           </div>
         </article>
       </section>
-      <section class="info" id="info">
+      <section class="info">
         <article class="wrapper">
           <span class="title">Informasi Acara</span>
           <p>
@@ -139,7 +151,7 @@
           </div>
         </article>
       </section>
-      <section class="story" id="story">
+      <section class="story">
         <article class="wrapper">
           <span class="title">Cerita Kami</span>
           <p>
@@ -324,7 +336,7 @@
           </div>
         </article>
       </section>
-      <section class="gallery" id="gallery">
+      <section class="gallery">
         <article class="wrapper">
           <span class="title">Kenangan bersama</span>
           <p>
@@ -462,7 +474,7 @@
           </div>
         </article>
       </section>
-      <section class="rsvp" id="rsvp">
+      <section class="rsvp">
         <article class="wrapper">
           <span class="title">Konfirmasi Kehadiran</span>
           <p>
@@ -473,7 +485,12 @@
           <div class="content">
             <div class="input-box">
               Saya
-              <input type="text" placeholder="Nama..." required />
+              <input
+                class="guest-name"
+                type="text"
+                placeholder="Nama..."
+                required
+              />
               berniat
               <div class="attendance">
                 <span class="selected-option">menghadiri</span>
@@ -512,7 +529,12 @@
                 </div>
                 <p>. Saya akan lebih</p>
                 menikmati acara nya jika lagu
-                <input type="text" placeholder="Judul lagu..." /> diputar.
+                <input
+                  class="guest-song"
+                  type="text"
+                  placeholder="Judul lagu..."
+                />
+                diputar.
               </div>
 
               <div class="guest-contact">
@@ -524,7 +546,7 @@
           </div>
         </article>
       </section>
-      <section class="gifts" id="gifts">
+      <section class="gifts">
         <article class="wrapper">
           <span class="title">Kirim Hadiah</span>
           <div class="content">
@@ -555,6 +577,14 @@
     </main>
     <footer>
       <span><a href="#">&copy;nauffal.code</a></span>
+      <div class="social-links">
+        <a href="https://www.instagram.com/nauffal.code/">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@nauffal.code">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+      </div>
     </footer>
 
     <!-- JS -->

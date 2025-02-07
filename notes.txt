@@ -1,4 +1,8 @@
 FIRST DESIGN:
 - make a working submit-btn in RSVP
 - make the guest contact input only for phone number
-- continue making footer
+- make letter animation when someone sending the rsvp
+
+BOTH OF THE DESIGN:
+- CHANGE THE PARAGRAPH INTO LOREM IPSUM
+- CHANGE THE IMAGE WITH SOMETHING RANDOM

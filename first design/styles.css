@@ -20,6 +20,26 @@ p:not(.yes-attendance p) {
   letter-spacing: 0.5px;
 }
 
+/* ALERT */
+.alert {
+  position: fixed;
+  bottom: -100px;
+  left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  color: #eee;
+  font-size: 1rem;
+  border: 1.5px solid red;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  transition: 0.3s;
+}
+.alert.show {
+  bottom: 5px;
+}
+
 /* JUMBOTRON */
 header {
   display: flex;
@@ -75,6 +95,11 @@ header .countdown div span:nth-child(2) {
   padding: 0.5rem 0.8rem;
   border: 1.5px solid var(--white);
   border-radius: 0.5rem;
+  transition: 0.3s;
+}
+.open-btn:hover {
+  background-color: var(--black);
+  color: var(--white);
 }
 
 /* NAVBAR */
@@ -126,7 +151,8 @@ section {
   display: flex;
   justify-content: center;
 }
-main section:nth-child(odd) {
+main section:nth-child(odd),
+.gifts {
   padding: 5rem 0;
 }
 article,
@@ -663,6 +689,21 @@ article > p {
 }
 
 /* FOOTER */
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--black);
+  font-size: 1.2rem;
+  padding: 2rem 1.5rem;
+}
+footer :is(span, a) {
+  color: var(--white);
+}
+footer .social-links {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
 
 /* BREAKPOINTS */
 @media (max-width: 992px) {
